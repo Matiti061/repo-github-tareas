@@ -1,0 +1,5 @@
+ALTER TABLE producto ADD CONSTRAINT nombre_unico UNIQUE(nombre);
+
+ALTER TABLE producto DROP CONSTRAINT nombre_unico;
+
+INSERT INTO schema_migrations (version) VALUES ('003_add_unique_constraint_to_nombre_producto');

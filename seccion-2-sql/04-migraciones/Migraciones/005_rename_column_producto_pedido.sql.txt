@@ -1,0 +1,7 @@
+ALTER TABLE producto_pedido RENAME COLUMN productos TO producto_id;
+ALTER TABLE producto_pedido RENAME COLUMN pedidos TO pedido_id;
+
+ALTER TABLE producto_pedido RENAME COLUMN producto_id TO productos;
+ALTER TABLE producto_pedido RENAME COLUMN pedido_id TO pedidos;
+
+INSERT INTO schema_migrations (version) VALUES ('005_rename_column_producto_pedido');
